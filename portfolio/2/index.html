@@ -20,17 +20,21 @@
 			</div>
 			<div class="header_links links">
 				<ul>
-					<li><a href="page.html">Статьи</a></li>
-					<li><a href="#me">Обо мне</a></li>
-					<li><a href="#portfolio">Портфолио</a></li>
-					<li><a href="#form">Написать мне</a></li>
+					<li><a onclick="$('html,body').stop().animate({ scrollTop: $('#articles').offset().top }, 900);"
+							href="#articles">Статьи</a></li>
+					<li><a onclick="$('html,body').stop().animate({ scrollTop: $('#me').offset().top }, 1200);"
+							href="#me">Обо мне</a></li>
+					<li><a onclick="$('html,body').stop().animate({ scrollTop: $('#portfolio').offset().top }, 2400);"
+							href="#portfolio">Портфолио</a></li>
+					<li><a onclick="$('html,body').stop().animate({ scrollTop: $('#form').offset().top }, 3000);"
+							href="#form">Написать мне</a></li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<main>
 		<div class="limit-container">
-			<section class="articles clearboth">
+			<section class="articles clearboth" id='articles'>
 				<h2>Все статьи</h2>
 				<select name="themes" id="themes">
 					<option value="all">Все статьи</option>
