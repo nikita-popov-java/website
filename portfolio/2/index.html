@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Spectral+SC:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./build/css/style.css">
+	<link rel="shortcut icon" href='./build/img/icon.ico' type="image/x-icon">
+	<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+	<title>Заверстай 2.0</title>
+</head>
+
+<body>
+	<header>
+		<div class="limit-container">
+			<div class="header_logo logo">
+				<img src="./build/img/logo.png" alt="Logo">
+			</div>
+			<div class="header_links links">
+				<ul>
+					<li><a href="page.html">Статьи</a></li>
+					<li><a href="#me">Обо мне</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#form">Написать мне</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="limit-container">
+			<section class="articles clearboth">
+				<h2>Все статьи</h2>
+				<select name="themes" id="themes">
+					<option value="all">Все статьи</option>
+					<option value="путешествия">Путешествия</option>
+					<option value="город">Город</option>
+					<option value="книги">Книги</option>
+					<option value="фотографии">Фотографии</option>
+					<option value="рецепты">Рецепты</option>
+				</select>
+				<div class="themes-arrow" data-arrow='1'></div>
+				<article class='small-articles'>
+					<a href='page.html' class="s-a_item art" data-tag='путешествия'>
+						<img src="./build/img/article-image1.png" alt="travels">
+						<div class="s-a_header">Путешествие в Берлин в августе</div>
+						<div class="s-a_paragraph">Летний месяц я провела в столице Германии вместе с друзьями. И вот
+							как это было!</div>
+						<div class="s-a_description">
+							<span class="tag">Теги: путешествия</span>
+							<span class="date">29.09.2020</span>
+						</div>
+					</a>
+					<a href='page.html' class="s-a_item art" data-tag='город'>
+						<img src="./build/img/article-image2.png" alt="drink">
+						<div class="s-a_header">Где выпить колдбрю в Москве</div>
+						<div class="s-a_paragraph">Собрала для вас список любимых кофеен,
+							где подают лучший летний напиток.</div>
+						<div class="s-a_description">
+							<span class="tag">Теги: город</span>
+							<span class="date">24.07.2020</span>
+						</div>
+					</a>
+					<a href='page.html' class="s-a_item art" data-tag='книги'>
+						<img src="./build/img/article-image3.png" alt="books">
+						<div class="s-a_header">Прочитано: книжные рекомендации</div>
+						<div class="s-a_paragraph">Рассказываю о прочитанных за последнее время книгах: фавориты и
+							провалы.</div>
+						<div class="s-a_description">
+							<span class="tag">Теги: книги</span>
+							<span class="date">15.07.2020</span>
+						</div>
+					</a>
+				</article>
+				<article class="big-articles">
+					<a href='page.html' class="b-a_item art" data-tag='фотографии'>
+						<div class="b-a_header s-a_header">Сними на плёнку</div>
+						<div class="b-a s-a_paragraph">Поделилась с вами весенними фотографиями,
+							и секретами удачных снимков.</div>
+						<div class="b-a s-a_description">
+							<span class="s-tag">Теги: фоторгафии</span>
+							<span class="s-time">29.06.2020</span>
+						</div>
+					</a>
+					<a href='page.html' class="b-a_item art" data-tag='рецепты'>
+						<div class="b-a_header s-a_header">Домашний чизкейк</div>
+						<div class="b-a s-a_paragraph">Что может быть лучше чизкейка с сезонными
+							ягодами? Только домашний чизкейк!</div>
+						<div class="b-a s-a_description">
+							<span class="s-tag">Теги: рецепты</span>
+							<span class="s-time">24.06.2020</span>
+						</div>
+					</a>
+				</article>
+				<a href="#" class='btn'>
+					Показать ещё
+				</a>
+			</section>
+			<section id='me' class="about-me">
+				<h2>Обо мне</h2>
+				<img src="./build/img/about-me.jpg" alt="Anna`s photo" class="about-me__image">
+				<div class="a-m__text">
+					<p class="p-about-me">Всем привет! Меня зовут Аня, и это мой личный блог.
+						Здесь ты найдёшь рассказы о моих путешествиях, снимки
+						на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+						что мне инетресно.</p>
+					<p class="p-about-me">Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+						портфолио. Ниже размещены несколько моих лучших
+						рабочих текстов. Буду рада новым сотрудничествам!</p>
+					<p class="p-about-me">Если вы хотите написать мне — это можно сделать в соцсетях
+						или через <a href="#form">форму</a>. Всегда приятно услышать обратную связь
+						от читателей и познакомиться поближе.</p>
+					<p class="p-about-me">Приятного чтения!</p>
+					<cite class="about-me__cite">Я верю, что каждый раз пробуя новое,
+						выходящее за зону моего комфорта,
+						я действительно узнаю настояющую
+						себя. </cite>
+				</div>
+			</section>
+			<section id='portfolio' class="portfolio">
+				<h2>Портфолио</h2>
+				<div class="portfolio__item">
+					<div class="blog-name s-a_header">Блог HTML Academy</div>
+					<div class="p__i-header s-a_header">«Как учиться продуктивно»</div>
+					<div class="p__i-text s-a_paragraph">Про основные методы обучения,
+						которые помогут быстро и надолго
+						запомнить информацию.</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="blog-name s-a_header">Журнал «LNK»</div>
+					<div class="p__i-header s-a_header">«Зачем поцели нужны человеку?
+						И какие они бывают»</div>
+					<div class="p__i-text s-a_paragraph">Поцелуи — повсеместная ежедневная
+						практика. Но зачем люди целуются?
+						Какие смысли вкладывают в этот ритуал?
+						И где корни этой практики?</div>
+				</div>
+				<div class="portfolio__item">
+					<div class="blog-name s-a_header">Журнал «Т — Л»</div>
+					<div class="p__i-header s-a_header">«Советы по эффективной
+						удалённой работе»</div>
+					<div class="p__i-text s-a_paragraph">Поделилась лайфхаками, которые помогают
+						мне работать продуктивно из дома. </div>
+				</div>
+				<a href="" class="btn uppercase">показать ещё</a>
+			</section>
+			<h2 id='h2'>Написать мне</h2>
+			<section id='form' class="form">
+				<form action="/" method="POST">
+					<label class="s-a_header">
+						Ваше имя
+						<input name='name' id='name' type="text" placeholder="Иван Иванов" required>
+					</label>
+					<label class="s-a_header">
+						Email
+						<input name='email' id='email' type="email" placeholder="google@gmail.com" required>
+					</label>
+					<label class="s-a_header">
+						Сообщение
+						<textarea name="message" id="message" cols="30" rows="10"
+							placeholder="Напишите здесь ваше сообщение."></textarea>
+					</label>
+					<input type="submit" id='submit' class='btn uppercase' value='отправить'>
+				</form>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="limit-container">
+			<ul class="nav-links">
+				<li class='nav-link'><a href="https://vk.com" title='Мы в Вконтакте'>ВК</a></li>
+				<li class='nav-link'><a href="https://web.telegram.org" title='Мы в Телеграме'>Телеграм</a></li>
+				<li class='nav-link'><a href="https://instagram.com" title='Мы в Инстаграме'>Инстаграм</a></li>
+				<li class='nav-link'><a href="https://twitter.com" title='Мы в Твиттере'>Твиттер</a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="./build/js/script.js"></script>
+</body>
+
+</html>

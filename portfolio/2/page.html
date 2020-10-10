@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Spectral+SC:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./build/css/style.css">
+	<link rel="shortcut icon" href='./build/img/icon.ico' type="image/x-icon">
+	<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+	<title>Page</title>
+</head>
+
+<body>
+	<header class='page-header'>
+		<div class="limit-container">
+			<a class="header_logo logo" href='index.html'>
+				<img src="./build/img/logo.png" alt="Logo">
+			</a>
+			<div class="header_links links">
+				<ul>
+					<li><a href="">Статьи</a></li>
+					<li><a href="index.html#me">Обо мне</a></li>
+					<li><a href="index.html#portfolio">Портфолио</a></li>
+					<li><a href="index.html#form">Написать мне</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main class='page-main'>
+		<div class="limit-container">
+			<article class="article clearboth">
+				<h2>Как себя мотивировать</h2>
+				<div class="s-a_description">
+					<span class="tag">Теги: путешествия, друзья</span>
+					<span class="date">29.09.2020</span>
+				</div>
+				<p class='article-p'>Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне
+					разобраться в работе
+					мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам
+					бороться
+					с соблазнами» Ирины Якутенко.</p>
+				<p class='article-p'>Согласно этой теории, человеческое поведение контролируют две системы: BAS
+					(Behavior Activation
+					System) и BIS (Behavior Inhibition System), каждая из них обусловлена генетически. Грей использовал
+					её для понимания того, как вознаграждение или наказание связаны с беспокойством и импульсивностью.
+					Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно
+					понять, какие стимулы использовать для эффективной мотивации.</p>
+				<figure>
+					<img src="./build/img/photo-in-article.jpg" alt="" class="article-img">
+					<figcaption class="legend">Моё поведение регулируется больше BAS, поэтому при планировании целей я
+						всегда использую позитивный стимул.</figcaption>
+				</figure>
+				<p class='article-p'>BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация
+					людей, чье
+					поведение в основном определяется этой системой, направлена на получение вознаграждения. Они
+					стремятся получить одобрение и награду
+					за свои действия. Такие люди более мотивированы в учебе и развитии разных навыков. Однако носители
+					активной BAS склонны к импульсивности и желанию немедленного вознаграждения, что может мешать
+					долгосрочной работе.
+					BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой
+					мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а
+					также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.</p>
+				<p class='article-p'>Определив, к какому типу относится поведение, вы узнаете, какие стимулы
+					использовать для достижения
+					поставленной цели. Например, я решила выучить английский — само изучение не является целью, поэтому
+					нужно правильно
+					её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью
+					какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я
+					склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не
+					потеряюсь в новой стране. И это можно использовать в различных сферах жизни.</p>
+				<div class="like_w">
+					<input type="button" class='like' value="">
+					<span>16</span>
+				</div>
+				<div class="social">
+					<ul>
+						<li class="social-btn"><a href="https://twitter.com"></a></li>
+						<li class="social-btn"><a href="https://facebook.com"></a></li>
+						<li class="social-btn"><a href="https://vk.com"></a></li>
+					</ul>
+				</div>
+			</article>
+			<a href='index.html' class="to-all-articles">
+				Ко всем статьям
+			</a>
+			<div class="comments-block">
+				<ul class="comments">
+					<li>
+						<img src="./build/img/review1.png" alt="Author-1" class="comment-img">
+						<span class="comment-author">Иван Петров</span>
+						<p class="comment-text">Отличная статья! Спасибо.</p>
+					</li>
+					<li>
+						<img src="./build/img/review2.png" alt="Author-2" class="comment-img">
+						<span class="comment-author">Ксения Ксения</span>
+						<p class="comment-text">Отличный текст, добавила в закладки.</p>
+					</li>
+					<li>
+						<img src="./build/img/review3.png" alt="Author-3" class="comment-img">
+						<span class="comment-author">Иван Иванов</span>
+						<p class="comment-text">Основательный материал! Можешь посоветовать какие-то книги на эту тему?
+						</p>
+					</li>
+				</ul>
+				<form action="/" method="POST" id='form' class="add-comment">
+					<h3>Оставить комментарий</h3>
+					<div class="col-1">
+						<input type="text" class='article-name' id="name" name='name' placeholder='Имя' required>
+						<input type="text" class='article-email' id="email" name='email' placeholder='Почта' required>
+						<input type="submit" value="Отправить" id='submit' class='btn'>
+					</div>
+					<div class="col-2">
+						<textarea class='article-text' name="comment" id="message" cols="30" rows="10"
+							placeholder='Написать комментарий...'></textarea>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="limit-container">
+			<ul class="nav-links">
+				<li class='nav-link'><a href="https://vk.com" title='Мы в Вконтакте'>ВК</a></li>
+				<li class='nav-link'><a href="https://web.telegram.org" title='Мы в Телеграме'>Телеграм</a></li>
+				<li class='nav-link'><a href="https://instagram.com" title='Мы в Инстаграме'>Инстаграм</a></li>
+				<li class='nav-link'><a href="https://twitter.com" title='Мы в Твиттере'>Твиттер</a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="./build/js/script.js"></script>
+</body>
+
+</html>
