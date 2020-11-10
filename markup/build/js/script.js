@@ -1,1 +1,0 @@
-$(document).ready((function(){$(".anchor").on("click",(function(o){o.preventDefault(),$("html,body").stop().animate({scrollTop:$("#"+$(this).data("anchor")).offset().top},900)}))}));
