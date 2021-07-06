@@ -1,1 +1,0 @@
-$(document).ready((function(){let i=$(".links-item");i.on("click",(function(){i.removeClass("links-item-active"),$(this).addClass("links-item-active")})),$(".slider").slick()}));
